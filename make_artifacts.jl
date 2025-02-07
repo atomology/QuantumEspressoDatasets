@@ -5,7 +5,6 @@ artifacts = Dict()
 folders = ["CrI3", "Si", "Si2"]
 
 for folder in folders
-  println(folder)
   fullpath = joinpath("datasets", folder)
   isdir(fullpath) || continue
   outpath  = joinpath(pwd(),"artifacts","$folder.tar.gz")
